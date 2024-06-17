@@ -98,7 +98,7 @@ def get_model_for_problem_formulation(problem_formulation_id):
     for lev_name in rfr_lev:
         for n in function.planning_steps:
             lev_name_ = f"{lev_name} {n}"
-            levers.append(IntegerParameter(lev_name_, 0, 1))
+            levers.append(IntegerParameter(lev_name_, 1, 1))
 
     # Early Warning System lever
     for lev_name in EWS_lev.keys():
